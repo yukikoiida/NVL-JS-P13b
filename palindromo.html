@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        function palindromo(){
+            var cadena = prompt("Escribe una palabra o frase").toLocaleLowerCase();
+            cadena = cadena.replace(/ /g,"");
+
+            for (var i=0; i<cadena.length; i++){
+                if(cadena[i]!=cadena[cadena.length-i-1]){
+                    return false;
+                }
+            }
+            return true;
+            
+            
+        }
+        /*
+        if(palindromo()){
+                alert("Es un palíndromo");
+            }else{
+                alert("No es un palíndromo");
+            }*/
+       
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
